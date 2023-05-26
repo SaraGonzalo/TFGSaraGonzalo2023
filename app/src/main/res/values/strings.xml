@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AprendizMania</string>
+    <string name="txtUsuario">¿Cuál es tu nombre?</string>
+    <string name="txtContrasena">Contraseña</string>
+</resources>

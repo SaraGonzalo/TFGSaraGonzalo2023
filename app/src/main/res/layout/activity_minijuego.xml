@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".aplicacion.Minijuego"
+        android:background="@drawable/fondo5" android:onClick="bandera">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="282dp"
+            android:layout_height="198dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"
+            android:id="@+id/linearLayout">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="66dp">
+            <TextView
+                    android:text="Jugador:"
+                    android:layout_width="141sp"
+                    android:layout_height="match_parent" android:id="@+id/textView" android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+            <TextView
+                    android:layout_width="141sp"
+                    android:layout_height="match_parent" android:id="@+id/txtJugador"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center" android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="66dp">
+            <TextView
+                    android:text="Puntuación total:"
+                    android:layout_width="141dp"
+                    android:layout_height="match_parent" android:id="@+id/textView2"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical" android:textColor="#000000"/>
+            <TextView
+                    android:layout_width="141sp"
+                    android:layout_height="match_parent" android:id="@+id/txtPuntuacion"
+                    android:textSize="25sp"
+                    android:textStyle="bold" android:textAlignment="center" android:textColor="#252525"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="66dp">
+            <TextView
+                    android:text="Vidas:"
+                    android:layout_width="141sp"
+                    android:layout_height="match_parent" android:id="@+id/textView3"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical" android:textColor="#000000"/>
+            <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/tres" android:id="@+id/imgVidas"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="257dp"
+            android:layout_height="381dp"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+                android:text="CÁLCULO"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button" android:textAlignment="center" android:textSize="20sp"
+                android:backgroundTint="#f64a60" android:onClick="calculo"/>
+
+        <Button
+                android:text="INGLÉS"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button2"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:backgroundTint="#f64a60" android:onClick="ingles"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button3" android:text="BANDERAS"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:backgroundTint="#f64a60" android:onClick="bandera"/>
+
+        <Button
+                android:text="PAREJAS"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button4"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:backgroundTint="#f64a60" android:onClick="pareja"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
